@@ -1,0 +1,44 @@
+name: freinds_orders
+description: "Receiving and following up on printing requests"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# versions available, run `flutter pub outdated`.
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_localization: ^0.3.3
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/constants/
+  filename: assets.dart
+  field_prefix: null
+  ignore_comments: true
+
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Black.ttf
+        - asset: assets/fonts/Tajawal-Bold.ttf
+        - asset: assets/fonts/Tajawal-Medium.ttf
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf

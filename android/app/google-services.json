@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733829105041",
+    "project_id": "freinds-orders",
+    "storage_bucket": "freinds-orders.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733829105041:android:a318f5b927777c1b340630",
+        "android_client_info": {
+          "package_name": "com.example.freinds_orders"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4BzkwVtYxCtD-homnDcHKgIe80cW0lEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
