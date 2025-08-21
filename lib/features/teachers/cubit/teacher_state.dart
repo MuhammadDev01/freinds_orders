@@ -10,3 +10,5 @@ final class TeacherAddLoadingState extends TeacherStates {}
 final class TeacherAddSuccessState extends TeacherStates {}
 
 final class TeacherAddErrorState extends TeacherStates {}
+
+final class TeacherReceivedOrderState extends TeacherStates {}

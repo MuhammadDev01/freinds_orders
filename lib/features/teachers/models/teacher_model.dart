@@ -4,7 +4,7 @@ class TeacherDetails {
   final String copies;
   final String deliveryDate;
   final String notes;
-  final bool delivered;
+  final bool recevied;
 
   TeacherDetails({
     required this.teacherName,
@@ -12,6 +12,6 @@ class TeacherDetails {
     required this.copies,
     required this.deliveryDate,
     required this.notes,
-    required this.delivered,
+    required this.recevied,
   });
 }

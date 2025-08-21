@@ -11,8 +11,14 @@ class TeacherCubit extends Cubit<TeacherStates> {
   final TextEditingController copiesController = TextEditingController();
   final TextEditingController dateController = TextEditingController();
   final TextEditingController notesController = TextEditingController();
-
+  bool isRecevied = false;
   List<TeacherDetails> data = [];
+
+  toggleReceiveOrder() {
+    isRecevied = !isRecevied;
+    emit(TeacherReceivedOrderState());
+  }
+
   void addTeacher() {
     emit(TeacherAddLoadingState());
     data.add(
@@ -22,7 +28,7 @@ class TeacherCubit extends Cubit<TeacherStates> {
         copies: copiesController.text,
         deliveryDate: dateController.text,
         notes: notesController.text,
-        delivered: true,
+        recevied: isRecevied,
       ),
     );
     emit(TeacherAddSuccessState());
